@@ -1,0 +1,138 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #2e3e50;
+    position: relative;
+}
+
+.section-title::after{
+    content: ' ';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to rigth, #3498db,#2ecc71);
+    border-radius: 2px;
+}
+.main-header{
+    background: linear-gradient(135deg, #667eea 10%, #764ba2 100%);
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+}
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: white;
+    font-size: 28.8px;
+    font-weight: bold;
+    margin: 0;
+}
+.main-nav{
+    display: block;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition:  0.3s ease;    
+}
+.nav-list a:hover{
+    background-color: rgba(255, 255, 255, 0,2);
+}
+body{
+    padding-top: 80px;
+}
+.carrusel{
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 64px;
+}
+.carrusel-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.carrusel-slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5 ease-in-out;
+}
+.carrusel-slide-active{
+    opacity: 1;
+}
+.carrusel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide.content{
+    position: absolute;
+    bottom: 20%;
+    left: 50px;
+    color:white;
+    z-index: 2;    
+}
+.slide.content h2{
+    font-size: 48px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.slide.content p{
+    font-size: 19.2px;
+    text-shadow:  rgba(0, 0, 0, 0.7);
+}
+.carrusel-control{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 3;
+}
