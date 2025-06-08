@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my blog</title>
+    <meta name="description" content="blog sobre tecnologia">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Mi blog Tech</h1>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#articulos">Articulos</a></li>
+                    <li><a href="#crear">Crear post</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--carrusel de imagenes-->
+    <section class="carrusel" id "inicio">
+        <div class="carrusel-container">
+            <div class="carrusel-slide-active">
+                <img src="img/fondo-tecnologia-alta-tecnologia-digital_29971-1131.avif" alt="imagen 1">
+                <div class="slide-content">
+                    <h2>Desarrollo web moderno</h2>
+                    <p>Aprende las ultimas tecnologias FrontEnd</p>
+                </div>
+            </div>
+            <div class="carrusel-slide">
+                <img src="img/blue-background-digital-technology-concept-purple-background-v_1544019jpg!w700wp.webp" alt="css avanzado">
+                <div class="slide-content">
+                    <h2>CSS avanzado</h2>
+                    <p>Domina layouts y animaciones</p>
+                </div>
+            </div>
+            <div class="carrusel-slide">
+                <img src="img/pngtree-modern-digital-tech-background-featuring-a-blue-and-purple-gradient-with-image_17174001.jpg" alt="responsive desing">
+                <div class="slide-content">
+                    <h2>Responsive Desing</h2>
+                    <p>Crea sitios que se adapten a cualquier dispositivo</p>
+                </div>
+            </div>
+            <div class="carrusel-control">
+                <button class="control-btn-prev"><</button>
+                <button class="control-btn-next">></button>
+            </div>
+            <!!---- indicadores --!!>
+            <div class="carrusel-indicador">
+                <span class="indicador active"></span>
+                <span class="indicador"></span>
+                <span class="indicador"></span>
+            </div>
+        </div>
+    </section>  
+    <!--formulario para crear articulos-->
+    <section class="create-post" id "crear">
+        <div class="container">
+            <h2 class="section tittle">Crear nuevo articulo</h2>
+            <form class="post-form">
+                <div class="form-group">
+                    <label for="titlle">Titulo del articulo</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Categoria</label>
+                    <select name="category" id="category">
+                        <option value="select">Selecciona una categoria</option>
+                        <option value="frontend">FrontEnd</option>
+                        <option value="backtend">BackEnd</option>
+                        <option value="desing">Diseño</option>
+                        <option value="tools">Herramientas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="excerpt">Resumen</label>
+                    <textarea name="exceprt" id="exceprt" rows="3" placeholder="breve resumen"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="content">Contenido</label>
+                    <textarea name="content" id="content" rows="8" placeholder="Escribe..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image">URL imagen</label>
+                    <input type="url" id="image" name="image" placeholder="https/....">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Enviar formulario</button>
+                    <button type="reset" class="btn-secondary">Limpiar formulario</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- arituclo 2-->
+    <section class="blog-articles">Productos</section>
+    <div class="container">
+        <h2 class="section-title">Ultimos articulos</h2>
+        <!--articulo #1-->
+        <div class="article-grid">
+            <article class="article-card">
+                <div class="article-image">
+                    <img src="img/CSS Grid Layout Guide.png" alt="CSS grid layout">
+                </div>
+                <div class="article-content">
+                    <span class="article-category">FrontEnd</span>
+                    <h3 class="article-title">FlexBox: la guía completa</h3>
+                    <p class="articule-exceprt">FlexBox Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam distinctio recusandae delectus, molestias accusantium quis omnis natus nemo, dolore dolorem voluptas iure aspernatur repellat cupiditate. Eos voluptatibus eius ducimus dolorum?</p>
+                </div>
+                <div class="article-meta">
+                    <span class="author">Por: EVELYN RAVE</span>
+                    <span class="date">6-06-2025</span>
+                </div>
+                <a href="#" class="read-more">leer mas</a>
+            </article>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="main-footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Mi blog Tech</h4>
+                    <p>compartiendo mi conocimiento</p>
+                </div>
+                <div class="footer-section">
+                    <h4>enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#articulos">Articulos</a></li>
+                        <li><a href="#crear">Crear post</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>email: evelynraveb@gmail.com</p>
+                    <p>siguenos en redes sociales</p>
+                </div>
+            </div>
+            <div class="footer-boton">
+                <p>copy, todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
